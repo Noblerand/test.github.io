@@ -1,0 +1,117 @@
+<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+
+@font-face 
+{
+    font-family: 'CaviarDreams';
+    src: url('/fonts/CaviarDreams.ttf');
+}
+
+body 
+{ 
+    background-color: transparent; 
+    font-family: "Michroma", verdana, sans-serif;
+}
+
+.messageBox 
+{
+    border-top: 15px solid blue;
+    width: 350px;
+    background-color: darkblue; 
+    color: white;
+    font-size: 12pt;
+    display: none; 
+    padding: 15px 10px 15px 10px; 
+    margin: 0px 0px 0px 0px; 
+    position: fixed; 
+    left: 0; 
+    top: 20px;
+}
+
+.twitch 
+{
+    border-top: 15px solid rebeccapurple;
+    width: 350px;
+    background-color: mediumpurple; 
+    color: white;
+    font-size: 12pt;
+    display: none; 
+    padding: 15px 8px 15px 8px; 
+    margin: 0px 0px 0px 0px; 
+    position: fixed; 
+    left: 0; 
+    top: 20px;
+}
+
+.schedule
+{
+    border-top: 15px solid black;
+    width: 350px;
+    background-color: darkred; 
+    color: white;
+    font-size: 12pt;
+    display: none; 
+    padding: 15px 10px 15px 10px; 
+    margin: 0px 0px 0px 0px; 
+    position: fixed; 
+    left: 0; 
+    top: 20px;
+}
+
+.Facebook
+{
+    border-top: 15px solid #8b9dc3;
+    width: 350px;
+    background-color: #3b5998; 
+    color: white;
+    font-size: 12pt;
+    display: none; 
+    padding: 15px 10px 15px 10px; 
+    margin: 0px 0px 0px 0px; 
+    position: fixed; 
+    left: 0; 
+    top: 20px;
+}
+
+.Twitter
+{
+    border-top: 15px solid #3cf;
+    width: 350px;
+    background-color: #0084B4; 
+    color: white;
+    font-size: 12pt;
+    display: none; 
+    padding: 15px 10px 15px 10px; 
+    margin: 0px 0px 0px 0px; 
+    position: fixed; 
+    left: 0; 
+    top: 20px;
+}
+
+.messageBoxNoBG
+{
+    width: 350px;
+    color: #fff;
+    font-size: 10pt;
+    display: none; 
+    padding: 15px 10px 15px 10px; 
+    margin: 0px 0px 0px 0px; 
+    position: fixed; 
+    left: 0; 
+    top: 200px;
+}
+
+.hdrContainer
+{
+    color: white; 
+    display: none; 
+    padding: 5px 0px 0px 0px; 
+    margin: 0px auto 0px auto;
+}
+
+.vcenter 
+{ 
+    display: flex; 
+    align-items: center; 
+    vertical-align: middle !important; 
+    height: 100%; 
+}

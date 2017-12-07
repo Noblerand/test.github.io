@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles/streampopups.css">
+        <script src="/scripts/jquery-3.2.1.min.js"></script>
+        <script src="/scripts/jquery-ui.min.js"></script>
+        <script src="/scripts/bootstrap.min.js"></script>
+        <script src="/scripts/streampopups.js"></script>
+        
+        <script type="text/javascript">
+            //==============================================================================
+            //Definitions of functions
+            //==============================================================================
+            //On each of the functions below, you can replace the array of minutes with "all".
+            //This will cause the popup to display every minute.
+            //
+            //loopPopup(popupElement, animationStyle, animationLength, displayLength
+            //          array:minutesOfHourToDisplayPopup);
+            //
+            //loopMultipe(array:popupElements, animationStyle, animationLenth, displayLength,
+            //            array:minutesOfHourToDisplayPopup);
+            //
+            //loopRandomMessage(popupElement, animationStyle, animationLength, displayLength,
+            //                  array:minutesOfHourToDisplayPopup, array:messagesToDisplay);
+            //==============================================================================
+            
+            //For random messages.
+            var messages = [];
+            messages[0] = "Random message 1";
+            messages[1] = "Random message 2";
+            messages[2] = "Random message 3";
+            
+            //When page loads and is ready
+            $(document).ready(function() 
+            {   
+                loopPopup($("#box1"), "fold", 1.5, 7, [5,10,15,20,25,30,35,40,45,50,55,59]);
+                loopMultiple([$("#box2"), $("#box3"), $("#box4")],"fold", 1.5, 7, [16,31,46,60]);                
+                //loopRandomMessage($("#rndmBox"), "fold", 1.5, 7, [6,7,8,9,10], messages);
+                //loopMultiple([$("#URL"),$("#URL2")],"fade", 1.5, 9, [11,12,13,14,15]);
+                //loopPopup($("#eventList"), "fade", 1.5, 7, [16,17,18,19,20]);
+            });
+        </script>
+    </head>
+    <body>
+        
+        <div id="box1" class="twitch" style="height: 100px;">
+            <div class="col-xs-2 vcenter">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/panel-93518952-image-669b3764b63a3a07-320-320.png" width="200%" height="100%"> 
+            </div>
+            <div class="col-xs-10 vcenter">
+                Enjoying the broadcast?<br>
+                Hit the follow button to catch Noble whenever he goes live! 
+            </div>
+        </div>
+        
+        <div id="box2" class="schedule" style="height: 110px;">
+            <div class="col-xs-2 vcenter">
+                <span class="glyphicon glyphicon-time" style="font-size: 35px;">&nbsp;</span>
+            </div>
+            <div class="col-xs-10 vcenter">
+                Catch Noble live every <br>
+                Wed, Thurs, Sat and Sun at
+                10pm +8GMT!.
+            </div>
+        </div>
+        <div id="box3" class="facebook" style="height: 110px;">
+            <div class="col-xs-2 vcenter">
+                <img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" width="240%" height="100%"  >
+            </div>
+            <div class="col-xs-10 vcenter">
+                Like Noblerand's page at 
+                Facebook.com/Noblerand!.
+            </div>
+        </div>
+        
+        <div id="box4" class="Twitter" style="height: 110px;">
+            <div class="col-xs-2 vcenter">
+                <img src="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697029-twitter-512.png" width="240%" height="100%"  >
+            </div>
+            <div class="col-xs-10 vcenter">
+                Follow Noblerand's twitter at 
+                twitter.com/rarbgarcia!.
+            </div>
+        </div>
+        
+        <!--<div id="rndmBox" class="messageBox" style="height: 110px;">
+            <div class="col-xs-2 vcenter">
+                <span class="glyphicon glyphicon-exclamation-sign" style="font-size: 35px;">&nbsp;</span>
+            </div>
+            <div id="messageText" class="col-xs-10 vcenter">
+            </div>
+        </div>-->
+        
+        <!--<div id="URL" class="hdrContainer" style="width: 170px;">
+            <img src="/images/image1.png" style="height: 35px;">
+            <span style="font-size: 20px; display: inline;">/ GamerTag</span>
+            Twitch.tv/GamerTag
+        </div>-->
+       <!-- <div id="URL2" class="hdrContainer" style="width: 170px;">
+            <img src="/images/image2.png" style="height: 35px;">
+            <span style="font-size: 20px; display: inline;">/ GamerTag</span>
+            YouTube.com/GamerTag
+        </div>-->
+        
+        <!--<div id="eventList" class="messageBoxNoBG" style="height: 100px; width: 800px !important">
+            <div class="col-xs-12">
+                <object data="https://streamlabs.com/widgets/event-list/v1/##################" style="width: 100%;"/>
+            </div>
+        </div>-->
+    
+    </body>
+</html>
